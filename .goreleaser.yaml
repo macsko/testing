@@ -16,11 +16,10 @@ checksum:
   disable: true
 brews:
 - name: testingmacsko
-  homepage: https://github.com/macsko/homebrew-taps
+  homepage: "https://github.com/Bidroombv/protorepo"
   download_strategy: GitHubPrivateRepositoryReleaseDownloadStrategy
   custom_require: "../private_strategy"
   folder: formula
-  homepage: "https://github.com/Bidroombv/protorepo"
   tap:
     owner: macsko
     name: homebrew-taps
