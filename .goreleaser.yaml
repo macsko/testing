@@ -24,6 +24,7 @@ changelog:
 brews:
 - name: testingmacsko
   homepage: https://github.com/macsko/homebrew-taps
+  download_strategy: GitHubPrivateRepositoryReleaseDownloadStrategy
   tap:
     owner: macsko
     name: homebrew-taps
