@@ -2,7 +2,7 @@
 #   hooks:
 #     - go mod tidy
 builds:
-  - main: ./folder/
+  - main: ./proton/folder/main.go
     env:
       - CGO_ENABLED=0
     goos:
