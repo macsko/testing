@@ -22,8 +22,8 @@ changelog:
       - '^docs:'
       - '^test:'
 brews:
-- name: gophersay
-  homepage: https://github.com/macsko/homebrew-taps
-  tap:
-    owner: macsko
-    name: homebrew-taps
+  - name: testing
+    homepage: https://github.com/macsko/homebrew-taps
+    tap:
+      owner: macsko
+      name: homebrew-taps
