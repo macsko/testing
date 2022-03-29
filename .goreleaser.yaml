@@ -10,6 +10,8 @@ builds:
 archives:
   - replacements:
       darwin: Darwin
+checksum:
+  disable: true
 brews:
 - name: testingmacsko
   homepage: https://github.com/macsko/homebrew-taps
