@@ -1,0 +1,21 @@
+name: linter
+
+on:
+  pull_request:
+    paths:
+      - "other_dir/**"
+
+jobs:
+  golangci-lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v2
+      - name: Grant private package access
+        run: |
+          git config --global url."https://${{ secrets.GLOBAL_ACCESS_TOKEN }}:x-oauth-basic@github.com/macsko".insteadOf "https://github.com/macsko"
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v2
+        with:
+          version: v1.30
