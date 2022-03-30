@@ -18,4 +18,5 @@ jobs:
       - name: Run golangci-lint
         uses: golangci/golangci-lint-action@v2
         with:
+          working-directory: other_dir
           version: v1.30
