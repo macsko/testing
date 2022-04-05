@@ -23,4 +23,4 @@ brews:
   tap:
     owner: macsko
     name: homebrew-taps
-    token: "{{ .Env.GITHUB_TOKEN }}"
+    token: "{{ .Env.TAP_GITHUB_TOKEN }}"
