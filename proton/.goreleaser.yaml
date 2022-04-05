@@ -1,8 +1,8 @@
-before:
-  hooks:
-    - go mod tidy
+# before:
+#   hooks:
+#     - go mod tidy
 builds:
-  - main: ./proton/folder/main.go
+  - main: ./src/cmd/proton/main.go
     env:
       - CGO_ENABLED=0
     goos:
@@ -15,12 +15,12 @@ archives:
 checksum:
   disable: true
 brews:
-- name: testingmacsko
+- name: proton
   homepage: "https://github.com/Bidroombv/protorepo"
   download_strategy: GitHubPrivateRepositoryReleaseDownloadStrategy
   custom_require: "../private_strategy"
   folder: formula
   tap:
-    owner: macsko
-    name: homebrew-taps
+    owner: Bidroombv
+    name: homebrew-tap
     token: "{{ .Env.TAP_GITHUB_TOKEN }}"
