@@ -21,6 +21,6 @@ brews:
   custom_require: "../private_strategy"
   folder: formula
   tap:
-    owner: Bidroombv
-    name: homebrew-tap
+    owner: macsko
+    name: homebrew-taps
     token: "{{ .Env.TAP_GITHUB_TOKEN }}"
