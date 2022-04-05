@@ -15,7 +15,7 @@ jobs:
         with:
           distribution: goreleaser
           version: latest
-          args: release --rm-dist -f ./src/.goreleaser.yaml
+          args: release --rm-dist -f ./proton/.goreleaser.yaml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAP_GITHUB_TOKEN: ${{ secrets.TAP_GITHUB_TOKEN }}
