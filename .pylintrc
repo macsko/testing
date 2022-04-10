@@ -1,0 +1,5 @@
+[pylint]
+ignore=
+
+disable=
+    fixme
