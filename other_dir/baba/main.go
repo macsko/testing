@@ -11,4 +11,5 @@ func main() {
 	fmt.Println("Nice :)")
 	a, _ := f_bib()
 	fmt.Println(a)
+	fmt.Println("New code")
 }
