@@ -12,4 +12,6 @@ func main() {
 	a, _ := f_bib()
 	fmt.Println(a)
 	fmt.Println("New code")
+	fmt.Println("other code")
+	fmt.Println("New code")
 }
