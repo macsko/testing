@@ -6,18 +6,21 @@ builds:
       - darwin
       - windows
       - linux
+    overrides:
+      - tags:
+        - '{{ .ProjectName }}/{{ .Version }}'
 archives:
   - replacements:
       darwin: macOS
 checksum:
   disable: true
 brews:
-- name: proton
-  homepage: "https://github.com/Bidroombv/protorepo"
-  download_strategy: GitHubPrivateRepositoryReleaseDownloadStrategy
-  custom_require: "../private_strategy"
-  folder: formula
-  tap:
-    owner: macsko
-    name: homebrew-taps
-    token: "{{ .Env.TAP_GITHUB_TOKEN }}"
+  - name: proton
+    homepage: "https://github.com/Bidroombv/protorepo"
+    download_strategy: GitHubPrivateRepositoryReleaseDownloadStrategy
+    custom_require: "../private_strategy"
+    folder: formula
+    tap:
+      owner: macsko
+      name: homebrew-taps
+      token: "{{ .Env.TAP_GITHUB_TOKEN }}"
