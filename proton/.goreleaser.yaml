@@ -6,9 +6,6 @@ builds:
       - darwin
       - windows
       - linux
-    overrides:
-      - tags:
-        - '{{ .ProjectName }}/{{ .Version }}'
 archives:
   - replacements:
       darwin: macOS
