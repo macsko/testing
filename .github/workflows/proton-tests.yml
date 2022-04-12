@@ -2,7 +2,7 @@ name: Proton tests
 on:
   pull_request:
     paths:
-      - "proton/**"
+      - 'proton/**'
 jobs:
   test:
     name: make test
