@@ -1,5 +1,5 @@
 name: Proton lint
-on: 
+on:
   pull_request:
     paths:
       - "proton/**"
