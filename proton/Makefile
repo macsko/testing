@@ -1,4 +1,3 @@
-.PHONY test
+.PHONY: test
 test:
 	echo "Siema"
-	
