@@ -1,8 +1,8 @@
 name: Proton lint
-on: 
+on:
   pull_request:
     paths:
-      - "proton/**"
+      - 'proton/**'
 jobs:
   golangci-lint:
     name: Lint
