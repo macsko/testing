@@ -2,7 +2,7 @@ name: goreleaser
 on:
   push:
     tags:
-      - proton/*
+      - '*-proton'
 jobs:
   goreleaser:
     runs-on: ubuntu-latest
