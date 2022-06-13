@@ -7,10 +7,14 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
+    steps:
+      - run: "true"
 
   proton:
     runs-on: ubuntu-latest
-    
+    steps:
+      - run: "true"
+
   openapi:
     runs-on: ubuntu-latest
     steps:
