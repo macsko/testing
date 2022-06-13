@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package aa.v1;
+
+option go_package = ".;aa_v1";
+
+service Users {
+}
