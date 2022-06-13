@@ -8,11 +8,13 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: "true"
 
   proton:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: "true"
 
   openapi:
