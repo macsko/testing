@@ -27,4 +27,5 @@ jobs:
 
   openapi:
     runs-on: ubuntu-latest
-    
+    steps:
+      - run: "true"
