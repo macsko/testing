@@ -1,0 +1,22 @@
+name: Quality control pull requests - OpenAPI
+on: 
+  pull_request:
+    paths:
+      - '**.yml'
+      - '**.yaml'
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+  proton:
+    runs-on: ubuntu-latest
+    
+  openapi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
+      - run: npm install --global @redocly/openapi-cli
+      - run: make openapi-lint
